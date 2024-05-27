@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,1,0" />
 </head>
 <body>
     <div class="mainContainer">
@@ -16,42 +16,251 @@
         <header class="header">
             <div class="headerContainer">
                 <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="Logo">
-                <span class="material-symbols-outlined">menu</span>
+                <div class="burgerMenu">
+                    <span class="material-symbols-rounded">menu</span>
+                </div>
+                
+                <ul class="nav">
+                    <li><a href="#fire"><span class="material-symbols-rounded fire">mode_heat</span> Fuego</a></li>
+                    <li><a href="#water"><span class="material-symbols-rounded water">water_drop</span> Agua</a></li>
+                    <li><a href="#plant"><span class="material-symbols-rounded plant">eco</span> Planta</a></li>
+                    <li><a href="#electric"><span class="material-symbols-rounded electric">bolt</span> Eléctrico</a></li>
+                </ul>
             </div>
         </header>
 
         <!--Main Content-->
         <section class="mainSection">
-            <div class="pokeGrid">
-
-                <div class="pokeCard">
-                    <div class="pokeContent">
-                        <h4 class="name">Pikachu</h4>
-                    </div>
-                    <img class="pokePhoto" src="https://clipart.info/images/ccovers/1528080672pikachu-3d-pokemon-png.png" alt="">
-                </div>
-
-                <div class="pokeCard">
-                    <div class="pokeContent">
-                        <h4 class="name">Pikachu</h4>
-                    </div>
-                    <img class="pokePhoto" src="https://clipart.info/images/ccovers/1528080672pikachu-3d-pokemon-png.png" alt="">
-                </div>
-
-                <div class="pokeCard">
-                    <div class="pokeContent">
-                        <h4 class="name">Pikachu</h4>
-                    </div>
-                    <img class="pokePhoto" src="https://clipart.info/images/ccovers/1528080672pikachu-3d-pokemon-png.png" alt="">
-                </div>
-
+            <div class="mainTitleContainer">
+                <img class="pokeball" src="assets/pokeball.png" alt="">
+                <h1 class="mainTitle">Pokedéx</h1>
             </div>
+
+            <div class="pokeTypeContainer">
+                <h2 id="fire" class="pokeTypeTitle">Tipo Fuego</h2>
+                <div class="pokeGrid">
+
+                    <div class="pokeCard fireBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Charizard</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded fire">mode_heat</span>
+                                <p class="fire">Fuego</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/fuego/charizard.png" alt="">
+                    </div>
+
+                    <div class="pokeCard fireBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Torchic</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded fire">mode_heat</span>
+                                <p class="fire">Eléctrico</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/fuego/torchic.png" alt="">
+                    </div>
+
+                    <div class="pokeCard fireBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Arcanine</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded fire">mode_heat</span>
+                                <p class="fire">Fuego</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/fuego/arcanine.png" alt="">
+                    </div>
+
+                    <div class="pokeCard fireBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Incineroar</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded fire">mode_heat</span>
+                                <p class="fire">Fuego</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/fuego/incineroar.png" alt="">
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="pokeTypeContainer">
+                <h2 id="water" class="pokeTypeTitle">Tipo Agua</h2>
+                <div class="pokeGrid">
+
+                    <div class="pokeCard waterBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Squirtle</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded water">water_drop</span>
+                                <p class="water">Agua</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/agua/squirtle.png" alt="">
+                    </div>
+
+                    <div class="pokeCard waterBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Mudkip</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded water">water_drop</span>
+                                <p class="water">Agua</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/agua/mudkip.png" alt="">
+                    </div>
+
+                    <div class="pokeCard waterBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Vaporeon</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded water">water_drop</span>
+                                <p class="water">Agua</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/agua/vaporeon.png" alt="">
+                    </div>
+
+                    <div class="pokeCard waterBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Totodile</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded water">water_drop</span>
+                                <p class="water">Agua</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/agua/totodile.png" alt="">
+                    </div>
+
+                    
+                </div>
+            </div>
+
+
+            <div class="pokeTypeContainer">
+                <h2 id="plant" class="pokeTypeTitle">Tipo Planta</h2>
+                <div class="pokeGrid">
+
+                    <div class="pokeCard plantBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Bulbasaur</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded plant">eco</span>
+                                <p class="plant">Planta</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/planta/bulbasaur.png" alt="">
+                    </div>
+
+                    <div class="pokeCard plantBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Treecko</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded plant">eco</span>
+                                <p class="plant">Planta</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/planta/treecko.png" alt="">
+                    </div>
+
+                    <div class="pokeCard plantBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Chikorita</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded plant">eco</span>
+                                <p class="plant">Planta</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/planta/Chikorita.png" alt="">
+                    </div>
+
+                    <div class="pokeCard plantBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Leafeon</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded plant">eco</span>
+                                <p class="plant">Planta</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/planta/leafeon.png" alt="">
+                    </div>
+
+                    
+                </div>
+            </div>
+
+
+            <div class="pokeTypeContainer">
+                <h2 id="electric" class="pokeTypeTitle">Tipo Eléctrico</h2>
+                <div class="pokeGrid">
+
+                    <div class="pokeCard electricBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Pikachu</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded electric">bolt</span>
+                                <p class="electric">Eléctrico</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/electrico/pikachu.png" alt="">
+                    </div>
+
+                    <div class="pokeCard electricBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Zapdos</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded electric">bolt</span>
+                                <p class="electric">Eléctrico</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/electrico/zapdos.png" alt="">
+                    </div>
+
+                    <div class="pokeCard electricBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Elektabuzz</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded electric">bolt</span>
+                                <p class="electric">Eléctrico</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/electrico/electabuzz.png" alt="">
+                    </div>
+
+                    <div class="pokeCard electricBg">
+                        <div class="pokeContent">
+                            <h4 class="name">Jolteon</h4>
+                            <div class="pokeType">
+                                <span class="material-symbols-rounded electric">bolt</span>
+                                <p class="electric">Eléctrico</p>
+                            </div>
+                        </div>
+                        <img class="pokePhoto" src="assets/electrico/jolteon.png" alt="">
+                    </div>
+
+                    
+                </div>
+            </div>
+
         </section>
 
         <!--Footer-->
         <footer class="footer">
             <div class="footerContainer">
-                <a href=""><h4 class="logoName">@The Space Arcade</h4></a>
+                <div class="logoFooterContainer">
+                    <img class="pokeball" src="assets/pokeball.png" alt="">
+                    <a class="footerLogo" href="">Pokedex</a>
+                </div>
+
+                <div class="socialContainer">
+                    <img class="socialImg" src="assets/Instagram.png" alt="">
+                    <img class="socialImg" src="assets/tiktok.png" alt="">
+                </div>
             </div>
         </footer>
     </div>
